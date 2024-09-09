@@ -1,0 +1,15 @@
+int numarare(nod * p){
+    int egale=0;
+    nod * unu=p;
+    nod * doi=p->urm;
+    while(doi!=NULL)
+    {
+        if(unu->info==doi->info)
+        {
+            egale+=1;
+        }
+        doi=doi->urm;
+        unu=unu->urm;
+    }
+    return egale;
+}
